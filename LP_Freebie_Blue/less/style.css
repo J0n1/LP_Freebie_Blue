@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+.container-fluid {
+  max-width: 1920px;
+  padding-left: 0;
+  padding-right: 0;
+}
+* {
+  outline: none!important;
+}
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.navbar .container {
+  padding: 0;
+}
+.navbar-default {
+  background-color: transparent;
+}
+.navbar-default h1 {
+  margin-top: 74px;
+  margin-left: 8px;
+  letter-spacing: -2px;
+}
+.navbar-default h1 a::first-letter {
+  padding-right: 3px;
+}
+.navbar-default .navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 72px;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:visited,
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+.navbar-default .navbar-nav {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-spacing: -1px;
+}
+.navbar-default .navbar-nav li:nth-child(1n+2) {
+  margin-left: 56px;
+}
+.navbar-default .navbar-nav li a {
+  padding: 14px 0 4px 0;
+}
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li.active a,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li.active a:hover,
+.navbar-default .navbar-nav li a:active,
+.navbar-default .navbar-nav li.active a:active,
+.navbar-default .navbar-nav li a:visited,
+.navbar-default .navbar-nav li.active a:visited {
+  color: white;
+  border-bottom: 2px solid transparent;
+}
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li.active a:hover,
+.navbar-default .navbar-nav li a:hover:hover,
+.navbar-default .navbar-nav li.active a:hover:hover,
+.navbar-default .navbar-nav li a:active:hover,
+.navbar-default .navbar-nav li.active a:active:hover,
+.navbar-default .navbar-nav li a:visited:hover,
+.navbar-default .navbar-nav li.active a:visited:hover {
+  border-bottom: 2px solid white;
+}
+header {
+  background: url("../img/Header.jpg") 0 0 no-repeat;
+  background-size: cover;
+  height: 1052px;
+}
+.header-head h1 {
+  margin-top: 243px;
+  margin-bottom: 213px;
+}
+.header-text {
+  color: white;
+}
+.header-text h1 {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 71.75px;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+.header-text a {
+  color: white;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  border: 3px solid white;
+  padding: 20px 59px;
+}

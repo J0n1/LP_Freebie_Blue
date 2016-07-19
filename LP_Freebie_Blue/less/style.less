@@ -5,10 +5,135 @@
 
 // FONTS
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
 
 
 //COMMON STYLES
 
+.container-fluid {
+	max-width: 1920px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+* {
+	outline: none!important;
+}
+
+
+
+// NAV BAR
+
+.navbar {
+	margin-bottom: 0;
+	border: 0;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+	
+	.container {
+		padding: 0;
+	}
+}
+
+.navbar-default {
+	background-color: transparent;
+	
+	h1 {
+		margin-top: 74px;
+		margin-left: 8px;
+		letter-spacing: -2px;
+		
+		a::first-letter {
+			padding-right: 3px;
+		}
+	}
+	
+	.navbar-brand {
+		font-family: 'Pacifico', cursive;
+		font-size: 72px;
+		
+		&,
+		&:active,
+		&:visited,
+		&:hover {
+			color: @color-text-inverse;
+		}
+	}
+	
+	.navbar-nav {
+		font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		word-spacing: -1px;
+		
+		li:nth-child(1n+2) {
+			margin-left: 56px;
+		}
+
+		li a {
+			padding: 14px 0 4px 0;
+		}
+
+		li,
+		li.active {
+
+			a,
+			a:hover,
+			a:active,
+			a:visited
+			 {
+				color: @color-text-inverse;
+				border-bottom: 2px solid transparent;
+				
+				&:hover {
+					border-bottom: 2px solid @color-text-inverse;
+				}
+			}
+		}
+	}
+}
+
+
+
+// HEADER
+
+header {
+	background: url("../img/Header.jpg") 0 0 no-repeat;
+	background-size: cover;
+	height: 1052px;
+}
+
+.header-head {
+	h1 {
+		margin-top: 243px;
+		margin-bottom: 213px;
+	}
+}
+
+.header-text {
+	color: @color-text-inverse;
+	
+	h1 {
+		font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 71.75px;
+		font-weight: 400;
+		letter-spacing: -2px;
+	}
+
+	a {
+		color: @color-text-inverse;
+		font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 48px;
+		font-weight: 500;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		border: 3px solid @color-text-inverse;
+		padding: 20px 59px;
+	}
+}
 
 
 
