@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
 .container-fluid {
   max-width: 1920px;
   padding-left: 0;
@@ -7,6 +8,26 @@
 }
 * {
   outline: none!important;
+}
+h1 {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 72px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+p {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 48px;
+}
+.text-main {
+  color: #515f67;
+}
+.text-main-inverse {
+  color: white;
 }
 .navbar {
   margin-bottom: 0;
@@ -24,6 +45,7 @@
   margin-top: 74px;
   margin-left: 8px;
   letter-spacing: -2px;
+  text-transform: none;
 }
 .navbar-default h1 a::first-letter {
   padding-right: 3px;
@@ -89,6 +111,7 @@ header {
   font-size: 71.75px;
   font-weight: 400;
   letter-spacing: -2px;
+  text-transform: none;
 }
 .header-text a {
   color: white;
@@ -99,4 +122,78 @@ header {
   text-transform: uppercase;
   border: 3px solid white;
   padding: 20px 59px;
+}
+.intro {
+  padding-top: 75px;
+  padding-bottom: 129px;
+}
+.intro h1 {
+  margin-bottom: 42px;
+}
+.featured_work {
+  background-color: #14bcdf;
+  padding-top: 62px;
+}
+.featured_work:before,
+.featured_work:after {
+  content: " ";
+  display: table;
+}
+.featured_work:after {
+  clear: both;
+}
+.featured_work h1 {
+  margin-bottom: 74px;
+}
+.featured-img {
+  margin-top: 43px;
+}
+.featured-img-first {
+  float: left;
+  width: calc(-535%);
+  height: 1053px;
+  overflow: hidden;
+}
+.featured-img-first img {
+  min-width: 375px;
+  min-height: 1053px;
+}
+.featured-img-last {
+  float: right;
+  width: calc(-535%);
+  height: 1053px;
+  overflow: hidden;
+}
+.featured-img-last img {
+  min-width: 375px;
+  min-height: 1053px;
+}
+.featured-img-center {
+  float: left;
+  width: 1170px;
+  height: 1053px;
+}
+.featured-img-center-1,
+.featured-img-center-2 {
+  width: 50%;
+  float: left;
+}
+.featured-img-center-2 {
+  position: relative;
+}
+.featured-img-text {
+  position: absolute;
+  width: 80%;
+  padding: 44px 40px;
+  background-color: #14bcdf;
+  bottom: 26%;
+  right: 10%;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.featured-img-text h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.featured-img-text p {
+  font-size: 36px;
 }
