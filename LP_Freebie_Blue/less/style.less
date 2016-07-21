@@ -39,6 +39,10 @@ h1 {
 	font-size: 72px;
 	text-transform: uppercase;
 	letter-spacing: -1px;
+	
+	@media (max-width: 767px) {
+		font-size: 36px;
+	}
 }
 
 p {
@@ -48,6 +52,10 @@ p {
 	line-height: 1.2;
 	letter-spacing: -1px;
 	margin-bottom: 48px;
+	
+	@media (max-width: 767px) {
+		font-size: 20px;
+	}
 }
 
 .text-main {
@@ -70,6 +78,11 @@ p {
 	
 	.container {
 		padding: 0;
+		
+		@media (max-width: 767px) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 }
 
@@ -85,11 +98,19 @@ p {
 		a::first-letter {
 			padding-right: 3px;
 		}
+
+		@media (max-width: 767px) {
+			margin: 30px;
+		}
 	}
 	
 	.navbar-brand {
 		font-family: 'Pacifico', cursive;
 		font-size: 72px;
+		
+		@media (max-width: 767px) {
+			font-size: 36px;
+		}
 		
 		&,
 		&:active,
@@ -106,12 +127,30 @@ p {
 		text-transform: uppercase;
 		word-spacing: -1px;
 		
+		@media (max-width: 767px) {
+			font-size: 16px;
+		}
+		
 		li:nth-child(1n+2) {
 			margin-left: 56px;
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+				margin-left: 22px;
+			}
+
+			@media (max-width: 767px) {
+				margin-left: 20px;
+			}
 		}
 
 		li a {
 			padding: 14px 0 4px 0;
+		}
+
+		li {
+			@media (max-width: 767px) {
+				margin-left: 20px;
+			}
 		}
 
 		li,
@@ -159,6 +198,10 @@ header {
 		font-weight: 400;
 		letter-spacing: -2px;
 		text-transform: none;
+		
+		@media (max-width: 767px) {
+			font-size: 32px;
+		}
 	}
 
 	a {
@@ -170,6 +213,11 @@ header {
 		text-transform: uppercase;
 		border: 3px solid @color-text-inverse;
 		padding: 20px 59px;
+		
+		@media (max-width: 767px) {
+			font-size: 28px;
+			padding: 12px 20px;
+		}
 	}
 }
 
@@ -215,6 +263,10 @@ header {
 		min-height: 1053px;
 
 	}
+
+	@media (max-width: 1169px) {
+		display: none;
+	}
 }
 
 .featured-img-last {
@@ -228,18 +280,37 @@ header {
 		min-height: 1053px;
 		
 	}
+
+	@media (max-width: 1169px) {
+		display: none;
+	}
 }
 
 .featured-img-center {
 	float: left;
 	width: 1170px;
 	height: 1053px;
+	
+	@media (max-width: 1169px) {
+		width: 100%;
+		height: auto;
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 
 .featured-img-center-1,
 .featured-img-center-2 {
 	width: 50%;
 	float: left;
+	
+	@media (max-width: 479px) {
+		float: none;
+		width: 100%;
+	}
 }
 
 .featured-img-center-2 {
@@ -262,6 +333,20 @@ header {
 
 	p {
 		font-size: 36px;
+	}
+
+	@media (max-width: 991px) {
+		bottom: 20%;
+		padding: 15px 10px;
+		
+		h2{
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -289,11 +374,23 @@ header {
 			font-weight: 600;
 			padding-top: 298px;
 			margin-bottom: 18px;
+			
+			@media (max-width: 1199px) {
+				padding-top: 220px;
+			}
+
+			@media (max-width: 767px) {
+				font-size: 24px;
+			}
 		}
 
 		p {
 			font-size: 24px;
 			font-weight: 400;
+			
+			@media (max-width: 767px) {
+				font-size: 20px;
+			}
 		}
 	}
 
@@ -302,27 +399,54 @@ header {
 
 		h1 {
 			background: url("../img/What_Do/idea.png") 0 0 no-repeat;
+			
+			@media (max-width: 1199px) {
+				background: url("../img/What_Do/idea.png") 50% 0 no-repeat;
+				background-size: 200px 200px;
+			}
 		}
 		
 		padding-right: 104px;
-		padding-left: 1px;
+		padding-left: 0;
+		
+		@media (max-width: 1199px) {
+			padding-right: 0;
+		}
 	}
 	article:nth-child(2) {
 		
 		h1 {
 			background: url("../img/What_Do/world.png") 0 0 no-repeat;
+			
+			@media (max-width: 1199px) {
+				background: url("../img/What_Do/world.png") 50% 0 no-repeat;
+				background-size: 200px 200px;
+			}
 		}
 		
 		padding: 0 52px;
+		
+		@media (max-width: 1199px) {
+			padding: 0 0;
+		}
 	}
 	article:nth-child(3) {
 		
 		h1 {
 			background: url("../img/What_Do/online.png") 0 0 no-repeat;
+			
+			@media (max-width: 1199px) {
+				background: url("../img/What_Do/online.png") 50% 0 no-repeat;
+				background-size: 200px 200px;
+			}
 		}
 		
 		padding-right: 0;
 		padding-left: 104px;
+		
+		@media (max-width: 1199px) {
+			padding-left: 0;
+		}
 	}
 }
 
@@ -349,6 +473,11 @@ header {
 	a {
 		padding-left: 96px;
 		padding-right: 96px;
+		
+		@media (max-width: 767px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
 }
 
@@ -368,6 +497,10 @@ footer {
 		font-weight: 400;
 		letter-spacing: 0px;
 		margin-bottom: 0;
+		
+		@media (max-width: 767px) {
+			font-size: 18px;
+		}
 	}	
 }
 

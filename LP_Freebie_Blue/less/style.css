@@ -15,6 +15,11 @@ h1 {
   text-transform: uppercase;
   letter-spacing: -1px;
 }
+@media (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 p {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
@@ -22,6 +27,11 @@ p {
   line-height: 1.2;
   letter-spacing: -1px;
   margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  p {
+    font-size: 20px;
+  }
 }
 .text-main {
   color: #515f67;
@@ -38,6 +48,12 @@ p {
 .navbar .container {
   padding: 0;
 }
+@media (max-width: 767px) {
+  .navbar .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .navbar-default {
   background-color: transparent;
 }
@@ -50,9 +66,19 @@ p {
 .navbar-default h1 a::first-letter {
   padding-right: 3px;
 }
+@media (max-width: 767px) {
+  .navbar-default h1 {
+    margin: 30px;
+  }
+}
 .navbar-default .navbar-brand {
   font-family: 'Pacifico', cursive;
   font-size: 72px;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-brand {
+    font-size: 36px;
+  }
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:active,
@@ -67,11 +93,31 @@ p {
   text-transform: uppercase;
   word-spacing: -1px;
 }
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav {
+    font-size: 16px;
+  }
+}
 .navbar-default .navbar-nav li:nth-child(1n+2) {
   margin-left: 56px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-default .navbar-nav li:nth-child(1n+2) {
+    margin-left: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav li:nth-child(1n+2) {
+    margin-left: 20px;
+  }
+}
 .navbar-default .navbar-nav li a {
   padding: 14px 0 4px 0;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav li {
+    margin-left: 20px;
+  }
 }
 .navbar-default .navbar-nav li a,
 .navbar-default .navbar-nav li.active a,
@@ -113,6 +159,11 @@ header {
   letter-spacing: -2px;
   text-transform: none;
 }
+@media (max-width: 767px) {
+  .header-text h1 {
+    font-size: 32px;
+  }
+}
 .header-text a {
   color: white;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -122,6 +173,12 @@ header {
   text-transform: uppercase;
   border: 3px solid white;
   padding: 20px 59px;
+}
+@media (max-width: 767px) {
+  .header-text a {
+    font-size: 28px;
+    padding: 12px 20px;
+  }
 }
 .intro {
   padding-top: 75px;
@@ -157,6 +214,11 @@ header {
   min-width: 375px;
   min-height: 1053px;
 }
+@media (max-width: 1169px) {
+  .featured-img-first {
+    display: none;
+  }
+}
 .featured-img-last {
   float: right;
   height: 1053px;
@@ -166,15 +228,37 @@ header {
   min-width: 375px;
   min-height: 1053px;
 }
+@media (max-width: 1169px) {
+  .featured-img-last {
+    display: none;
+  }
+}
 .featured-img-center {
   float: left;
   width: 1170px;
   height: 1053px;
 }
+@media (max-width: 1169px) {
+  .featured-img-center {
+    width: 100%;
+    height: auto;
+  }
+  .featured-img-center img {
+    width: 100%;
+    height: auto;
+  }
+}
 .featured-img-center-1,
 .featured-img-center-2 {
   width: 50%;
   float: left;
+}
+@media (max-width: 479px) {
+  .featured-img-center-1,
+  .featured-img-center-2 {
+    float: none;
+    width: 100%;
+  }
 }
 .featured-img-center-2 {
   position: relative;
@@ -195,6 +279,19 @@ header {
 .featured-img-text p {
   font-size: 36px;
 }
+@media (max-width: 991px) {
+  .featured-img-text {
+    bottom: 20%;
+    padding: 15px 10px;
+  }
+  .featured-img-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .featured-img-text p {
+    font-size: 20px;
+  }
+}
 .what_do {
   padding-top: 59px;
   padding-bottom: 36px;
@@ -213,16 +310,42 @@ header {
   padding-top: 298px;
   margin-bottom: 18px;
 }
+@media (max-width: 1199px) {
+  .what_do article h1 {
+    padding-top: 220px;
+  }
+}
+@media (max-width: 767px) {
+  .what_do article h1 {
+    font-size: 24px;
+  }
+}
 .what_do article p {
   font-size: 24px;
   font-weight: 400;
 }
+@media (max-width: 767px) {
+  .what_do article p {
+    font-size: 20px;
+  }
+}
 .what_do article:nth-child(1) {
   padding-right: 104px;
-  padding-left: 1px;
+  padding-left: 0;
 }
 .what_do article:nth-child(1) h1 {
   background: url("../img/What_Do/idea.png") 0 0 no-repeat;
+}
+@media (max-width: 1199px) {
+  .what_do article:nth-child(1) h1 {
+    background: url("../img/What_Do/idea.png") 50% 0 no-repeat;
+    background-size: 200px 200px;
+  }
+}
+@media (max-width: 1199px) {
+  .what_do article:nth-child(1) {
+    padding-right: 0;
+  }
 }
 .what_do article:nth-child(2) {
   padding: 0 52px;
@@ -230,12 +353,34 @@ header {
 .what_do article:nth-child(2) h1 {
   background: url("../img/What_Do/world.png") 0 0 no-repeat;
 }
+@media (max-width: 1199px) {
+  .what_do article:nth-child(2) h1 {
+    background: url("../img/What_Do/world.png") 50% 0 no-repeat;
+    background-size: 200px 200px;
+  }
+}
+@media (max-width: 1199px) {
+  .what_do article:nth-child(2) {
+    padding: 0 0;
+  }
+}
 .what_do article:nth-child(3) {
   padding-right: 0;
   padding-left: 104px;
 }
 .what_do article:nth-child(3) h1 {
   background: url("../img/What_Do/online.png") 0 0 no-repeat;
+}
+@media (max-width: 1199px) {
+  .what_do article:nth-child(3) h1 {
+    background: url("../img/What_Do/online.png") 50% 0 no-repeat;
+    background-size: 200px 200px;
+  }
+}
+@media (max-width: 1199px) {
+  .what_do article:nth-child(3) {
+    padding-left: 0;
+  }
 }
 .contact {
   background: url("../img/Footer.jpg") 0 0 no-repeat;
@@ -253,6 +398,12 @@ header {
   padding-left: 96px;
   padding-right: 96px;
 }
+@media (max-width: 767px) {
+  .contact-head a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 footer {
   background-color: #14bcdf;
   color: white;
@@ -264,4 +415,9 @@ footer p {
   font-weight: 400;
   letter-spacing: 0px;
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  footer p {
+    font-size: 18px;
+  }
 }
