@@ -1,0 +1,7 @@
+.featured-img-first {
+  width: calc((100% - 1170px) / 2);
+}
+
+.featured-img-last {
+  width: calc((100% - 1170px) / 2);
+}
